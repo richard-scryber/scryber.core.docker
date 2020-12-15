@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  scryber.core.docker.api:
+    image: ${DOCKER_REGISTRY-}scrybercoredocker
+    build:
+      context: .
+      dockerfile: Scryber.Core.Docker.API/Dockerfile
